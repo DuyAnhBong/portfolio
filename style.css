@@ -1,0 +1,620 @@
+/* ========================================
+   PORTFOLIO TEMPLATE - Clean & Minimal
+   Responsive for Desktop & Mobile
+   ======================================== */
+
+/* ========================================
+   CSS Reset & Base Styles
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: #1a1a1a;
+    --color-text-light: #666;
+    --color-bg: #ffffff;
+    --color-bg-light: #f5f5f5;
+    --color-accent: #4A90E2;
+    --color-border: #e0e0e0;
+    --font-main: 'Helvetica Neue', Arial, sans-serif;
+    --font-alt: Georgia, serif;
+    --container-width: 1200px;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.8;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* ========================================
+   Container
+   ======================================== */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+.header {
+    position: sticky;
+    top: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1.5rem 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    font-size: 0.95rem;
+    position: relative;
+    padding-bottom: 0.25rem;
+}
+
+.nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-text);
+}
+
+/* ========================================
+   Main Content
+   ======================================== */
+.main-content {
+    min-height: 70vh;
+    padding: var(--spacing-xl) 0;
+}
+
+/* ========================================
+   Sections
+   ======================================== */
+.section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: var(--spacing-md);
+    letter-spacing: -0.02em;
+}
+
+/* ========================================
+   Profile Section
+   ======================================== */
+.profile-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+}
+
+.profile-image {
+    position: sticky;
+    top: 120px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.name {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing-sm);
+}
+
+.bio {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.9;
+}
+
+/* ========================================
+   Values Section
+   ======================================== */
+.value-item {
+    margin-bottom: var(--spacing-lg);
+    padding-left: 2rem;
+    border-left: 2px solid var(--color-border);
+}
+
+.value-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.value-description {
+    color: var(--color-text-light);
+    line-height: 1.9;
+}
+
+/* ========================================
+   Mission & Purpose Sections
+   ======================================== */
+.mission-statement {
+    padding: var(--spacing-md);
+    background: var(--color-bg-light);
+    border-radius: 4px;
+}
+
+.highlight-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 300;
+    color: var(--color-text);
+}
+
+.purpose-text {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+/* ========================================
+   Works Page
+   ======================================== */
+.page-title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: -0.02em;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    aspect-ratio: 3/2;
+    background: var(--color-bg-light);
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-info {
+    padding: var(--spacing-sm) 0;
+}
+
+.portfolio-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-category {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer {
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    position: relative;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.3;
+}
+
+.footer-logo svg {
+    margin: 0 auto;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   Scroll to Top Button
+   ======================================== */
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: var(--color-bg-light);
+}
+
+.scroll-text {
+    font-size: 0.75rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.1em;
+}
+
+.scroll-top svg {
+    width: 20px;
+    height: auto;
+}
+
+/* ========================================
+   Responsive - Tablet
+   ======================================== */
+@media (max-width: 968px) {
+    :root {
+        --spacing-lg: 3rem;
+        --spacing-xl: 4rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .profile-content {
+        grid-template-columns: 250px 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--spacing-md);
+    }
+}
+
+/* ========================================
+   Responsive - Mobile
+   ======================================== */
+@media (max-width: 768px) {
+    :root {
+        --spacing-md: 1.5rem;
+        --spacing-lg: 2rem;
+        --spacing-xl: 3rem;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .header {
+        padding: 1rem 0;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .nav {
+        gap: 1.5rem;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .section {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .page-title {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* Profile Mobile */
+    .profile-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .profile-image {
+        position: static;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .bio {
+        font-size: 0.95rem;
+    }
+
+    /* Values Mobile */
+    .value-item {
+        padding-left: 1rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .value-title {
+        font-size: 1.1rem;
+    }
+
+    .value-description {
+        font-size: 0.95rem;
+    }
+
+    /* Mission Mobile */
+    .highlight-text {
+        font-size: 1.25rem;
+        line-height: 1.7;
+    }
+
+    .purpose-text {
+        font-size: 1rem;
+    }
+
+    /* Portfolio Mobile */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .portfolio-title {
+        font-size: 1.1rem;
+    }
+
+    .portfolio-category {
+        font-size: 0.85rem;
+    }
+
+    /* Scroll Button Mobile */
+    .scroll-top {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.75rem;
+    }
+
+    .scroll-text {
+        font-size: 0.7rem;
+    }
+
+    .scroll-top svg {
+        width: 16px;
+    }
+}
+
+/* ========================================
+   Responsive - Extra Small Mobile
+   ======================================== */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 1.75rem;
+    }
+
+    .nav {
+        gap: 1rem;
+    }
+
+    .highlight-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+@media print {
+    .header,
+    .scroll-top {
+        display: none;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+
+/* ========================================
+   HERO MESSAGE (run once, keep final state)
+   ======================================== */
+
+.hero-message{
+  margin-bottom: var(--spacing-xl);
+}
+
+.hero-box{
+  border: 1px solid var(--color-border);
+  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+  padding: 3.5rem 2.5rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+/* Cả cụm (title + desc) chạy cùng nhau */
+.hero-anim{
+  transform: translateX(-90px);
+  opacity: 0;
+
+  /* chậm hơn ở đây */
+  animation: hero-slide-in 1.8s ease forwards;
+  /* nếu muốn delay nhẹ: */
+  animation-delay: 0.15s;
+  will-change: transform, opacity;
+}
+
+/* Headline */
+.hero-head{
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.35;
+  margin-bottom: 1.4rem;
+  color: var(--color-text);
+}
+
+/* Description */
+.hero-desc{
+  margin: 0;
+  max-width: 900px;
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--color-text-light);
+}
+
+/* Animation: chạy 1 lần rồi giữ trạng thái cuối */
+@keyframes hero-slide-in{
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .hero-anim{
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px){
+  .hero-box{
+    padding: 2.2rem 1.4rem;
+  }
+  .hero-desc{
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+}
+
