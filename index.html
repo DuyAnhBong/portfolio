@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chu Hoang Duy Anh - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -50,17 +50,29 @@
 
                 <div class="profile-content">
                     <div class="profile-image">
-                        <img src="https://via.placeholder.com/300x300/e0e0e0/666?text=Your+Photo" alt="Profile Photo">
+                        <img src="./images/chuhoangduyanh_daily.jpg" alt="Profile Photo">
                     </div>
 
                     <div class="profile-text">
                         <h2 class="name">Chu Hoang Duy Anh</h2>
                         <p class="bio">
-                            1994年生まれの31歳、ベトナム出身。<br>
-                            現在は学校法人山口学園 ECCコンピュータ専門学校にて システムエンジニア分野を専攻中です。 <br>
-                            プログラミングの基礎に力を入れ、堅牢で拡張性の高いシステム設計について理解を深めています。<br>
-                            プログラミングやシステム開発に強い興味を持ち、 常に新しい技術を学び続けたいと考えています。 <br>
-                            責任感を持って丁寧に作業を行い、チームでの協力を大切にしています。
+                            現在は学校法人山口学園 ECCコンピュータ専門学校にて
+                            システムエンジニア分野を専攻中です。
+                        </p>
+
+                        <p class="bio">
+                            プログラミングの基礎に力を入れ、
+                            堅牢で拡張性の高いシステム設計について理解を深めています。
+                        </p>
+
+                        <p class="bio">
+                            システム開発に強い興味を持ち、
+                            常に新しい技術を学び続けたいと考えています。
+                        </p>
+
+                        <p class="bio">
+                            責任感を持って丁寧に作業を行い、
+                            チームでの協力を大切にしています。
                         </p>
                     </div>
                 </div>
@@ -68,17 +80,79 @@
 
             <!-- Skill Section -->
             <section class="section values-section">
-                <h1 class="section-title">Skills</h1>
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="skill-title">フロントエンド</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">バックエンド</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">データベース</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">その他</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Microsoft Office</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">言語</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JLPT N1</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section interest-section">
+                <h2 class="section-title">Interest</h2>
+                <div class="interest-grid">
+
+                    <div class="interest-card">
+                        <img src="./images/music.jpg" alt="Music">
+                        <h3>音楽</h3>
+                        <p>Ryuichi Sakamoto / Hans Zimmer...</p>
+                    </div>
+
+                    <div class="interest-card">
+                        <img src="./images/movie.jpg" alt="Movies">
+                        <h3>映画</h3>
+                        <p>Interstellar / Inception / Oppenheimer...</p>
+                    </div>
+
+                    <div class="interest-card">
+                        <img src="./images/photo.webp" alt="Photography">
+                        <h3>撮影</h3>
+                        <p>Street / Urban / Minimal</p>
+                    </div>
+                </div>
             </section>
             <section class="section contact-section">
-                <h1 class="section-title">Contact</h1>
-            </section>
-            <!-- Interest Section -->
-            <section class="section mission-section">
-                <h1 class="section-title">Interest</h1>
-            </section>
-            <section class="section contact-section">
-                <h1 class="section-title">Contact</h1>
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:chuhoangduyanh@gmail.com">chuhoangduyanh@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">GitHub</span>
+                        <a href="https://github.com/DuyAnhBong" target="_blank">
+                            github.com/DuyAnhBong
+                        </a>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
@@ -105,7 +179,7 @@
         </button>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
