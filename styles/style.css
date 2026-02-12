@@ -640,7 +640,7 @@ button {
     bottom: var(--space-8);
     right: var(--space-8);
     width: 56px;
-    height: 90px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
