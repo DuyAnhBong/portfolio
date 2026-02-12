@@ -5,7 +5,6 @@
 }
 
 :root {
-    /* Modern Color Palette */
     --primary: #6366f1;           /* Indigo */
     --primary-light: #818cf8;
     --primary-dark: #4f46e5;
@@ -40,7 +39,7 @@
     --border: var(--gray-200);
     --border-light: var(--gray-100);
     
-    /* Modern Shadows */
+    /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -205,7 +204,7 @@ button {
 }
 
 /* ========================================
-   Hero Section - Modern Gradient
+   Hero Section
    ======================================== */
 .hero-message {
     margin-bottom: var(--space-20);
