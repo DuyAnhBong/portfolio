@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (scrollTopBtn) {
         // Show/hide scroll button based on scroll position
         window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 300) {
+            if (window.pageYOffset > 150) {
                 scrollTopBtn.classList.add('visible');
             } else {
                 scrollTopBtn.classList.remove('visible');
