@@ -1,20 +1,9 @@
-/* ========================================
-   MODERN PORTFOLIO 2025
-   Glassmorphism | Gradients | Smooth Animations
-   ======================================== */
-
-/* ========================================
-   CSS Reset
-   ======================================== */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ========================================
-   Modern Design System
-   ======================================== */
 :root {
     /* Modern Color Palette */
     --primary: #6366f1;           /* Indigo */
@@ -153,7 +142,7 @@ button {
 }
 
 /* ========================================
-   Header - Modern Glassmorphism
+   Header
    ======================================== */
 .header {
     position: sticky;
@@ -301,7 +290,7 @@ button {
 }
 
 /* ========================================
-   Profile Section - Modern Card
+   Profile Section
    ======================================== */
 .profile-content {
     display: grid;
@@ -345,7 +334,7 @@ button {
 }
 
 /* ========================================
-   Skills - Modern Grid with Gradients
+   Skills
    ======================================== */
 .skills-grid {
     display: grid;
@@ -422,7 +411,7 @@ button {
 }
 
 /* ========================================
-   Interest - Modern Image Cards
+   Interest
    ======================================== */
 .interest-grid {
     display: grid;
@@ -472,7 +461,7 @@ button {
 }
 
 /* ========================================
-   Contact - Modern Style
+   Contact
    ======================================== */
 .contact-card {
     background: linear-gradient(135deg, 
@@ -645,7 +634,7 @@ button {
 }
 
 /* ========================================
-   Scroll to Top - Modern
+   Scroll to Top
    ======================================== */
 .scroll-top {
     position: fixed;
