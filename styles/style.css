@@ -771,7 +771,7 @@ button {
     
     .scroll-top {
         width: 48px;
-        height: 48px;
+        height: 100px;
         bottom: var(--space-6);
         right: var(--space-6);
     }
