@@ -664,6 +664,7 @@ button {
 }
 
 .scroll-top:hover {
+    background: var(--primary-dark);
     transform: translateY(-4px);
     box-shadow: 0 25px 35px -5px rgb(0 0 0 / 0.2), 0 12px 15px -8px rgb(0 0 0 / 0.2);
 }
@@ -675,11 +676,13 @@ button {
     text-transform: uppercase;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    color: #ffffff;
 }
 
 .scroll-top svg {
     width: 16px;
     height: auto;
+    color: #ffffff;
 }
 
 /* ========================================
