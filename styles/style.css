@@ -646,8 +646,8 @@ button {
     align-items: center;
     justify-content: center;
     gap: var(--space-2);
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: white;
+    background: var(--primary);
+    color: #ffffff;
     border: none;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
@@ -655,6 +655,7 @@ button {
     visibility: hidden;
     transition: var(--transition);
     z-index: 40;
+    cursor: pointer;
 }
 
 .scroll-top.visible {
