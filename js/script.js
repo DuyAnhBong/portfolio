@@ -1,7 +1,3 @@
-// ========================================
-// PORTFOLIO TEMPLATE - JavaScript
-// ========================================
-
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function () {
 
